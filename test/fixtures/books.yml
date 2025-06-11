@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titre: MyString
+  date_de_sortie: 2025-06-09
+  auteur: MyString
+  pages: MyString
+  genre: MyText
+
+two:
+  titre: MyString
+  date_de_sortie: 2025-06-09
+  auteur: MyString
+  pages: MyString
+  genre: MyText
