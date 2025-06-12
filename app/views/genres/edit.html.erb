@@ -1,12 +1,27 @@
-<% content_for :title, "Editing genre" %>
+<% content_for :title, "genres" %>
 
-<h1>Editing genre</h1>
+<h1>Genres</h1>
 
-<%= render "form", genre: @genre %>
+<table>
+  <thead>
+    <tr>
+      <th>Nom</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+     <% @genres.each do |genre| %>
+      <tr>
+        <td><%= genre.nom %></td>
+        <td><%= link_to 'Show this genre', genre %></td>
+        <td><%= link_to 'Edit', edit_genre_path(genre) %></td>
+        <td><%= link_to "Back to genres", genres_path %></td>
+      </tr>
+      <%end%>
+  </tbody>
+</table>
 
 <br>
 
-<div>
-  <%= link_to "Show this genre", @genre %> |
-  <%= link_to "Back to genres", genres_path %>
-</div>
+<%= link_to "New Genre", new_genre_path %>

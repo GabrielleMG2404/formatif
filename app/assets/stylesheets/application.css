@@ -9,7 +9,7 @@
  * Consider organizing styles into separate files for maintainability.
  */
 body{
-	background-color: green;
+	background-color: lavender;
 }
 
 p{
@@ -19,7 +19,7 @@ p{
 }
 
 td{
-	border-style: solid;
+	border-style: inset;
 }
 
 a.active{
